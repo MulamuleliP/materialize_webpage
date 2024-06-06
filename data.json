@@ -1,7 +1,7 @@
 {
     "user": {
         "fullName": "Mulamuleli Patience Magwedze",
-        "photo": "/TableMountain.jpg"
+        "photo": "./TableMountain.jpg"
     },
     "city": {
         "name": "Maputo",
