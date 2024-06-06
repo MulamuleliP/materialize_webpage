@@ -1,0 +1,67 @@
+{
+    "user": {
+        "fullName": "Mulamuleli Patience Magwedze",
+        "photo": "/TableMountain.jpg"
+    },
+    "city": {
+        "name": "Maputo",
+        "photo": "./Maputo.jpg",
+        "description": "I would love to visit Maputo because I know they offer an unforgettable cultural experience and to see it's beauty."
+    },
+    "foreignLanguage": {
+        "language": "Korean",
+        "phrases": [
+            {
+                "englishPhrase": "Hello",
+                "foreignLanguage": "annyeonghasey"
+            },
+            {
+                "englishPhrase": "Thank you",
+                "foreignLanguage": "gamsahamnida"
+            },
+            {
+                "englishPhrase": "I'm sorry",
+                "foreignLanguage": "mianhamnida"
+            },
+            {
+                "englishPhrase": "How have you been?",
+                "foreignLanguage": "jal jinaesseoyo?"
+            },
+            {
+                "englishPhrase": "Have a good day",
+                "foreignLanguage": "joeun haru doeseyo"
+            }
+        ]
+    },
+    "favouriteSubjects": [
+        {
+            "name": "Engineering Business Systems",
+            "photo": "./Engineering.jpg"
+        },
+        {
+            "name": "4IR Technologies Bootcamp",
+            "photo": "./4IR Bootcamp.jpg"
+        },
+        {
+            "name": "Full Stack Web development",
+            "photo": "./full-stack-web-development.jpg"
+        }
+    ],
+    "historicalPlaces": [
+        {
+            "name": "Gold Reef City",
+            "photo": "./GoldReef.jpg",
+            "description": "It is a theme park built around an old gold mine, offering both entertainment and educational experiences about Johannesburg's gold rush era.There's an underground mine, visitors can take an underground tour of the mine,descending 75 meters below the surface to see what life was like for the miners."
+        },
+        {
+            "name": "Mandela House",
+            "photo": "./MandelaHouse.jpg",
+            "description": "It is a former Residence of Nelson Mandela located in Soweto, Mandela House is the former home of Nelson Mandela, where he lived from 1946 to 1962 before his imprisonment.The house has been preserved as a museum, showcasing Mandela's personal memorabilia and providing insights into his life and legacy"
+        },
+        {
+            "name": "Hector Pieterson Memorial and Museum",
+            "photo": "./HectorMemorial.jpg",
+            "description": "The museum features exhibits with photographs, oral histories, and personal testimonies that detail the events of the Soweto Uprising and its impact on the apartheid regime.The memorial and museum commemorate the events of June 16, 1976,when thousands of students protested against the imposition of Afrikaans as a medium of instruction,leading to a brutal crackdown by police"
+        }
+    ]
+}

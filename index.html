@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize Webpage</title>
+    <link rel="stylesheet" href="./materialize.css">
+    <style>
+        body {
+            margin: 1.5em;
+            background-color: #ffe4e1; 
+        }
+
+        .content-box {
+            background-color: rgba(144, 238, 144, 0.7); 
+            border-radius: 5px;
+        }
+
+        .table {
+            border: 1px solid black;
+        }
+
+        .t1 {
+            background-color: #ff6347; 
+            border: 1px solid black;
+        }
+
+        .t2 {
+            background-color: #ffe4b5; 
+        }
+
+        @media (max-width: 960px) {
+            .mid-text {
+                float: right !important;
+            }
+        }
+
+        h1, h2, p, th {
+            color: #483d8b; 
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row content-box">
+        <h1 class="col s12">{{user.fullName}}</h1>
+    </div>
+    <div class="row content-box">
+        <div class="col s12 m6">
+            <img src="{{user.photo}}" width="270" height="300" class="responsive-img square" style="float:right;">
+        </div>
+    </div>
+    <div class="row content-box">
+        <h2 class="col s12">{{city.name}}</h2>
+        <div class="row">
+            <img src="{{city.photo}}" class="s12 l4 lf-pic">
+            <p class="col s12 l8">{{city.description}}</p>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="row">
+            <h2 class="col s12">{{foreignLanguage.language}}</h2>
+            <div class="col s12">
+                <table class="table">
+                    <thead>
+                    <tbody>
+                    <tr class="t1">
+                        <th>Korean</th>
+                        <th>English Translation</th>
+                    </tr>
+                </thead>
+            </tbody>
+                    <tr class="t2">
+                        <td>{{foreignLanguage.phrases.[0].korean}}</td>
+                        <td>{{foreignLanguage.phrases.[0].english}}</td>
+                    </tr>
+                    <tr class="t2">
+                        <td>{{foreignLanguage.phrases.[1].korean}}</td>
+                        <td>{{foreignLanguage.phrases.[1].english}}</td>
+                    </tr>
+                    <tr class="t2">
+                        <td>{{foreignLanguage.phrases.[2].korean}}</td>
+                        <td>{{foreignLanguage.phrases.[2].english}}</td>
+                    </tr>
+                    <tr class="t2">
+                        <td>{{foreignLanguage.phrases.[3].korean}}</td>
+                        <td>{{foreignLanguage.phrases.[3].english}}</td>
+                    </tr>
+                    <tr class="t2">
+                        <td>{{foreignLanguage.phrases.[4].korean}}</td>
+                        <td>{{foreignLanguage.phrases.[4].english}}</td>
+                    </tr>
+                    <tr class="t2">
+                        <td>{{foreignLanguage.phrases.[5].korean}}</td>
+                        <td>{{foreignLanguage.phrases.[5].english}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="row">
+            <h2 class="col s12">Favourite Subjects</h2>
+            <div class="col s12 m8 l4">
+                <h3 class="light-blue lighten-5">{{favouriteSubjects.[0].name}}</h3>
+                <img src="{{favouriteSubjects.[0].photo}}" class="responsive-img">
+            </div>
+            <div class="col s12 m8 l4">
+                <h3 class="light-blue lighten-5">{{favouriteSubjects.[1].name}}</h3>
+                <img src="{{favouriteSubjects.[1].photo}}" class="responsive-img">
+            </div>
+            <div class="col s12 m8 l4">
+                <h3 class="light-blue lighten-5">{{favouriteSubjects.[2].name}}</h3>
+                <img src="{{favouriteSubjects.[2].photo}}" class="responsive-img">
+            </div>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="row">
+            <h2 class="col s12">Historical Places</h2>
+            <div class="col s12 l4">
+                <h3 class="light-blue lighten-5">{{historicalPlaces.[0].name}}</h3>
+                <div class="row">
+                    <p class="col s6" style="text-align: justify;">{{historicalPlaces.[0].description}}</p>
+                    <img src="{{historicalPlaces.[0].photo}}" class="col s6" style="padding-top: 1.5em;">
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <h3 class="light-blue lighten-5">{{historicalPlaces.[1].name}}</h3>
+                <div class="row">
+                    <p class="col s6 mid-text" style="text-align: justify;">{{historicalPlaces.[1].description}}</p>
+                    <img src="{{historicalPlaces.[1].photo}}" class="col s6" style="padding-top: 1.5em;">
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <h3 class="light-blue lighten-5">{{historicalPlaces.[2].name}}</h3>
+                <div class="row">
+                    <p class="col s6" style="text-align: justify;">{{historicalPlaces.[2].description}}</p>
+                    <img src="{{historicalPlaces.[2].photo}}" class="col s6" style="padding-top: 1.5em;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
